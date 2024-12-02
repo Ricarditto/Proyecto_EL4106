@@ -174,6 +174,7 @@ training_curves.png
 .png
 /ResNet/CheckpointsResNet68_SD
 /ResNet/CheckpointsResNet68_SD_0.8
+/ResNet/CheckpointsResNet100_SD
 /ResNet/cifar10
 /effnet/checkpoints
 /effnet/main.py
