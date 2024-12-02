@@ -179,3 +179,4 @@ training_curves.png
 /effnet/main.py
 /ResNet/.pth
 /ResNet/CheckpointsResNet110_SD
+/ResNet/CheckpointsResNet110_SD_0.8
