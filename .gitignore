@@ -166,6 +166,14 @@ cython_debug/
 /cifar10
 /checkpoints
 /Intermedia
+/CheckpointsDenseNet100
 
 checkpoint_resnet18.pth
 training_curves.png
+.pth
+.png
+/ResNet/CheckpointsResNet68_SD
+/ResNet/CheckpointsResNet68_SD_0.8
+/ResNet/cifar10
+/effnet/checkpoints
+/ResNet/.pth
