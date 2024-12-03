@@ -3,8 +3,6 @@
 ### Autores: Benito Fuentes, Ricardo Salas.
 ### Tutor: Andrés González
 
-Aquí tienes la sección redactada en formato de párrafos para incluir en el archivo `README.md`:
-
 ---
 
 #### Instrucciones para ejecutar el código
