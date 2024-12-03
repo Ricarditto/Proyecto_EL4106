@@ -25,8 +25,8 @@ Se utilizarán dos conjuntos de datos:
 3. Selección de variables: Cada pixel se tratará como una entrada independiente.
 
 #### Algoritmo
- *Tipo de Algoritmo: Redes Neuronales Convolucionales (CNN) con diferentes arquitecturas (ResNet, DenseNet, EfficientNet y redes planas).
- *Justificación: Las conexiones residuales y densas permiten entrenar redes más profundas y eficientes al mitigar problemas como el desvanecimiento de gradientes y el uso excesivo de parámetros.
+ * Tipo de Algoritmo: Redes Neuronales Convolucionales (CNN) con diferentes arquitecturas (ResNet, DenseNet, EfficientNet y redes planas).
+ * Justificación: Las conexiones residuales y densas permiten entrenar redes más profundas y eficientes al mitigar problemas como el desvanecimiento de gradientes y el uso excesivo de parámetros.
 
 #### Definición de salidas
 * Función objetivo: Maximizar la precisión de clasificación en el conjunto de validación.
