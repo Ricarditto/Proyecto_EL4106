@@ -3,6 +3,37 @@
 ### Autores: Benito Fuentes, Ricardo Salas.
 ### Tutor: Andrés González
 
+Aquí tienes la sección redactada en formato de párrafos para incluir en el archivo `README.md`:
+
+---
+
+#### Instrucciones para ejecutar el código
+
+El repositorio está organizado en varias carpetas que contienen implementaciones específicas de diferentes arquitecturas de redes neuronales convolucionales. Cada carpeta incluye uno o más archivos en formato `.ipynb`, los cuales ya están ejecutados y contienen resultados listos para su análisis. Las carpetas principales son: DenseNet, EfficientNet y ResNet, que corresponden a las arquitecturas evaluadas en este proyecto. Además, el archivo `redplana_resnet.ipynb` compara el desempeño de redes planas con ResNet.
+
+Se recomienda utilizar Google Colab para ejecutar estos notebooks debido a su compatibilidad y facilidad para gestionar recursos computacionales. Sin embargo, también es posible ejecutarlos en un entorno local con ligeras modificaciones en el código.
+
+Para ejecutar los notebooks en Google Colab, simplemente abre el archivo `.ipynb` correspondiente directamente en la plataforma. Los notebooks ya están configurados para utilizar el almacenamiento en Google Drive. Si deseas cambiar la ubicación de los checkpoints o archivos generados, modifica la variable `checkpoint_dir` al momento de entrenar la red.
+
+Si se decida ejecutar los archivos en un entorno local, primero se deben eliminar las líneas relacionadas con Google Drive:
+```python
+from google.colab import drive
+drive.mount('/content/drive')
+```
+Luego, actualizar la variable `checkpoint_dir` con la ruta local correspondiente al sistema de archivos. Por ejemplo:
+```python
+checkpoint_dir = "/ruta/local/a/checkpoints"
+```
+
+Asegurarse de instalar las dependencias necesarias antes de ejecutar el código en un entorno local. Estas incluyen bibliotecas como `torch`, `numpy`, `matplotlib` y `tensorboard`, las cuales puedes instalar con el comando:
+```bash
+pip install torch numpy matplotlib tensorboard
+```
+
+Los notebooks están diseñados para facilitar la visualización de los resultados ya generados. No es obligatorio reentrenar los modelos a menos que se desee realizar modificaciones o ajustes específicos. En caso de querer reentrenar, asegurarse de tener disponibles los conjuntos de datos en las rutas indicadas dentro de cada notebook.
+
+Este proyecto puede ser ejecutado en cualquier entorno que cumpla con los requisitos mencionados. Sin embargo, se recomienda Colab para simplificar la configuración y el acceso a los recursos computacionales necesarios.
+
 #### Descripción del problema y motivación
 El proyecto busca analizar cómo las arquitecturas profundas con conexiones residuales (ResNet) y densas (DenseNet) impactan el desempeño de redes neuronales convolucionales. Estas arquitecturas han demostrado superar limitaciones tradicionales como el desvanecimiento de gradientes y el uso ineficiente de parámetros. La motivación principal es optimizar el diseño de modelos para aplicaciones que requieren precisión y eficiencia computacional, abordando desafíos en tareas complejas como el reconocimiento de imágenes.
 
@@ -75,11 +106,18 @@ Se utilizarán dos conjuntos de datos:
 | 13      | Comparación de resultados, análisis detallado y redacción de conclusiones.               |
 
 #### Referencias
-Ref: He, Kaiming, et al. "Deep residual learning for image recognition." Proceedings of the IEEE conference on computer vision and pattern recognition. 2016.
-Ref: Szegedy, Christian, et al. "Going deeper with convolutions." Proceedings of the IEEE conference on computer vision and pattern recognition. 2015.
-Ref: He, Kaiming, et al. "Identity mappings in deep residual networks." European conference on computer vision. Springer, Cham, 2016.
-Ref: Huang, Gao, et al. "Densely Connected Convolutional Networks." CVPR. Vol. 1. No. 2. 2017.
-Ref: Veit, Andreas, Michael J. Wilber, and Serge Belongie. "Residual networks behave like ensembles of relatively shallow networks." Advances in Neural Information Processing Systems. 2016.
-Ref. Huang G., Sun Y., Liu Z., Sedra D., Weinberger K.Q. (2016) Deep Networks with Stochastic Depth. In: Leibe B., Matas J., Sebe N., Welling M. (eds) Computer Vision – ECCV 2016. ECCV 2016. Lecture Notes in Computer Science, vol 9908. Springer, Cham. https://doi.org/10.1007/978-3-319-46493-0_39
-Ref. M. Tan and Q. V. Le, “EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks,” arXiv, 2019, doi: 10.48550/ARXIV.1905.11946.
-Ref.  D. Balduzzi, M. Frean, L. Leary, J. Lewis, K. W.-D. Ma, and B. McWilliams, “The Shattered Gradients Problem: If resnets are the answer, then what is the question?,” arXiv, 2017, doi: 10.48550/ARXIV.1702.08591.
+[1] He, Kaiming, et al. "Deep residual learning for image recognition." Proceedings of the IEEE conference on computer vision and pattern recognition. 2016.
+
+[2] Szegedy, Christian, et al. "Going deeper with convolutions." Proceedings of the IEEE conference on computer vision and pattern recognition. 2015.
+
+[3] He, Kaiming, et al. "Identity mappings in deep residual networks." European conference on computer vision. Springer, Cham, 2016.
+
+[4] Huang, Gao, et al. "Densely Connected Convolutional Networks." CVPR. Vol. 1. No. 2. 2017.
+
+[5] Veit, Andreas, Michael J. Wilber, and Serge Belongie. "Residual networks behave like ensembles of relatively shallow networks." Advances in Neural Information Processing Systems. 2016.
+
+[6] Huang G., Sun Y., Liu Z., Sedra D., Weinberger K.Q. (2016) Deep Networks with Stochastic Depth. In: Leibe B., Matas J., Sebe N., Welling M. (eds) Computer Vision – ECCV 2016. ECCV 2016. Lecture Notes in Computer Science, vol 9908. Springer, Cham. https://doi.org/10.1007/978-3-319-46493-0_39
+
+[7] M. Tan and Q. V. Le, “EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks,” arXiv, 2019, doi: 10.48550/ARXIV.1905.11946.
+
+[8]  D. Balduzzi, M. Frean, L. Leary, J. Lewis, K. W.-D. Ma, and B. McWilliams, “The Shattered Gradients Problem: If resnets are the answer, then what is the question?,” arXiv, 2017, doi: 10.48550/ARXIV.1702.08591.
