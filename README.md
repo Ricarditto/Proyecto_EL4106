@@ -79,7 +79,7 @@ Se utilizarán dos conjuntos de datos:
   * Generación de gráficos y análisis comparativo.
 
 #### Resultados esperados
-1. Medidas de desempeño: Accuracy, loss, eficiencia computacional (memoria y tiempo).
+1. Medidas de desempeño: Accuracy, Loss, eficiencia computacional (memoria y tiempo).
 2. Forma de presentación:
    * Tablas comparativas de precisión y pérdida en CIFAR-10 y MNIST.
    * Gráficos de curvas de entrenamiento y validación para cada modelo.
